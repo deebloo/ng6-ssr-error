@@ -1,4 +1,18 @@
-# Foo
+# SSR ERROR REPRO
+
+1.  create build: `./build.sh`
+2.  start server: `node dist/server.js`
+3.  open browser: localhost:4000
+4.  View Error in terminal
+
+```
+TypeError: StaticInjectorError[InjectionToken Application Initializer -> InjectionToken DocumentToken]:
+  StaticInjectorError(Platform: core)[InjectionToken Application Initializer -> InjectionToken DocumentToken]:
+    Right-hand side of 'instanceof' is not an object
+    at bt (/Users/dannyblue/Documents/projects/foo/dist/server.js:1182:87380)
+    at gt (/Users/dannyblue/Documents/projects/foo/dist/server.js:1182:87255)
+    at ir (/Users/dannyblue/Documents/projects/foo/dist/server.js:1182:110026)
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
